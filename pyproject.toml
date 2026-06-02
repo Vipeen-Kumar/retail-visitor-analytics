@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cctv-person-tracker"
+version = "0.1.0"
+description = "Person-only CCTV tracking with YOLOv8 and ByteTrack"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "ultralytics>=8.3.0",
+  "opencv-python>=4.10.0",
+]
+
+[project.scripts]
+track-cctv = "cctv_tracker.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
