@@ -431,10 +431,17 @@ def generate_zone_preview(input_path: Path, output_path: Path) -> Path:
     camera_id = get_camera_id(input_path)
     zones = get_camera_zones(camera_id)
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    if output_path.exists():
+        output_path.unlink()
     preview = draw_zones(frame, zones)
     if not cv2.imwrite(str(output_path), preview):
         raise RuntimeError(f"Failed to write zone preview image: {output_path}")
     return output_path
+
+
+def build_zone_preview_path(input_path: Path) -> Path:
+    camera_name = normalize_camera_name(input_path)
+    return Path("./outputs") / f"{camera_name}_zones_preview.png"
 
 
 def draw_summary_overlay(frame, customer_candidates: int, staff_candidates: int):
@@ -751,6 +758,12 @@ def process_video(
     input_path = ensure_input_video(input_path)
     camera_id = get_camera_id(input_path)
     zones = get_camera_zones(camera_id)
+    preview_path = build_zone_preview_path(input_path)
+    print("Generating zone preview:")
+    print(display_path(preview_path))
+    generate_zone_preview(input_path, preview_path)
+    print("Zone preview saved:")
+    print(display_path(preview_path))
     output_path, persons_output_path, summary_output_path = build_output_paths(
         input_path, output_path
     )
