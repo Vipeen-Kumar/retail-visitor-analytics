@@ -48,6 +48,27 @@ def format_currency(value: Any) -> str:
     return f"Rs. {float(value):,.2f}"
 
 
+def extract_person_metrics(persons: list[dict[str, Any]] | None) -> tuple[int, float, int]:
+    if not persons:
+        return 0, 0.0, 0
+
+    valid_people = [person for person in persons if person.get("valid_person")]
+    total_people = len(valid_people)
+    total_dwell_seconds = sum(
+        float(person.get("visible_duration_seconds", 0.0)) for person in valid_people
+    )
+    return total_people, total_dwell_seconds, len(persons)
+
+
+def zone_dwell_total(zone_summary: dict[str, Any] | None) -> float:
+    if not zone_summary:
+        return 0.0
+    return sum(
+        float(zone_data.get("total_dwell_seconds", 0.0))
+        for zone_data in zone_summary.values()
+    )
+
+
 def zone_summary_to_frame(zone_summary: dict[str, Any] | None) -> pd.DataFrame:
     if not zone_summary:
         return pd.DataFrame(columns=["zone", "total_visits", "total_dwell_seconds"])
@@ -136,23 +157,29 @@ def render_table_chart(
 
 
 def render_cctv_section() -> None:
-    combined_summary = load_json_file(output_path("combined_summary.json")) or {}
+    cam1_persons = load_json_file(output_path("persons_cam1.json"))
+    cam2_persons = load_json_file(output_path("persons_cam2.json"))
     cam1_zone_summary = load_json_file(output_path("zone_summary_cam1.json"))
     cam2_zone_summary = load_json_file(output_path("zone_summary_cam2.json"))
 
     st.title("Store Analytics Dashboard")
     st.header("CCTV Analytics")
 
-    breakdown = combined_summary.get("camera_breakdown", {})
-    cam1_metrics = breakdown.get("CAM1", {})
-    cam2_metrics = breakdown.get("CAM2", {})
+    cam1_people, cam1_dwell_seconds, cam1_records = extract_person_metrics(
+        cam1_persons if isinstance(cam1_persons, list) else None
+    )
+    cam2_people, cam2_dwell_seconds, cam2_records = extract_person_metrics(
+        cam2_persons if isinstance(cam2_persons, list) else None
+    )
+    cam1_zone_dwell_total = zone_dwell_total(cam1_zone_summary)
+    cam2_zone_dwell_total = zone_dwell_total(cam2_zone_summary)
 
     cam1_cols = st.columns(3)
-    metric_card(cam1_cols[0], "CAM1 Total People", format_number(cam1_metrics.get("people", 0)))
+    metric_card(cam1_cols[0], "CAM1 Total People", format_number(cam1_people))
     metric_card(
         cam1_cols[1],
         "CAM1 Total Dwell Time",
-        f"{format_number(cam1_metrics.get('total_dwell_seconds', 0), 2)} sec",
+        f"{format_number(cam1_dwell_seconds, 2)} sec",
     )
     cam1_top = zone_summary_to_frame(cam1_zone_summary)
     metric_card(
@@ -161,16 +188,19 @@ def render_cctv_section() -> None:
         cam1_top.iloc[0]["zone"] if not cam1_top.empty else "N/A",
     )
 
+    if cam1_people == 0 and cam1_zone_dwell_total > 0:
+        st.warning("Inconsistent analytics detected. Check source files.")
+
     render_zone_distribution("CAM1 Zone Distribution", cam1_zone_summary)
 
     st.divider()
 
     cam2_cols = st.columns(3)
-    metric_card(cam2_cols[0], "CAM2 Total People", format_number(cam2_metrics.get("people", 0)))
+    metric_card(cam2_cols[0], "CAM2 Total People", format_number(cam2_people))
     metric_card(
         cam2_cols[1],
         "CAM2 Total Dwell Time",
-        f"{format_number(cam2_metrics.get('total_dwell_seconds', 0), 2)} sec",
+        f"{format_number(cam2_dwell_seconds, 2)} sec",
     )
     cam2_top = zone_summary_to_frame(cam2_zone_summary)
     metric_card(
@@ -179,7 +209,28 @@ def render_cctv_section() -> None:
         cam2_top.iloc[0]["zone"] if not cam2_top.empty else "N/A",
     )
 
+    if cam2_people == 0 and cam2_zone_dwell_total > 0:
+        st.warning("Inconsistent analytics detected. Check source files.")
+
     render_zone_distribution("CAM2 Zone Distribution", cam2_zone_summary)
+
+    with st.expander("Debug Logs"):
+        st.write("Loaded: persons_cam1.json", f"records={cam1_records}")
+        st.write("Loaded: persons_cam2.json", f"records={cam2_records}")
+        st.write("Loaded: zone_summary_cam1.json", f"zones={len(cam1_zone_summary or {})}")
+        st.write("Loaded: zone_summary_cam2.json", f"zones={len(cam2_zone_summary or {})}")
+        st.write(
+            "CAM1 totals",
+            f"people={cam1_people}",
+            f"dwell_seconds={format_number(cam1_dwell_seconds, 2)}",
+            f"zone_dwell_seconds={format_number(cam1_zone_dwell_total, 2)}",
+        )
+        st.write(
+            "CAM2 totals",
+            f"people={cam2_people}",
+            f"dwell_seconds={format_number(cam2_dwell_seconds, 2)}",
+            f"zone_dwell_seconds={format_number(cam2_zone_dwell_total, 2)}",
+        )
 
 
 def render_sales_section() -> None:
