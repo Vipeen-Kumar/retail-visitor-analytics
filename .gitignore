@@ -1,46 +1,27 @@
-# Python bytecode and caches
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Python cache
+*.py[cod]
 
-# Virtual environments
-.venv/
-venv/
-env/
-
-# YOLO model weights
-*.pt
-
-# CCTV videos
-CCTV Footage/
-
-# Generated outputs
-outputs/
-
-# IDE settings
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Build artifacts
-build/
-dist/
+# Egg metadata
 *.egg-info/
 
-# Logs
-*.log
+# Virtual environment
+.venv/
 
-# Temporary files
-*.tmp
+# YOLO downloads
+*.pt
+
+# Outputs
+outputs/
+
+# CCTV footage
+CCTV Footage/
+
+# Python build cache
+.pytest_cache/
+.mypy_cache/
+
+# VS Code
+.vscode/
 
 # Jupyter
 .ipynb_checkpoints/
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
