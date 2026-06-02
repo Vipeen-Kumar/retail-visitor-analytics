@@ -155,6 +155,21 @@ def render_table_chart(
     st.plotly_chart(chart, use_container_width=True)
     st.dataframe(frame[table_columns], use_container_width=True, hide_index=True)
 
+def render_zone_preview(image_name: str, title: str, caption: str) -> None:
+    image_path = output_path(image_name)
+
+    if image_path.exists():
+        st.subheader(title)
+
+        col1, col2, col3 = st.columns([1, 3, 1])
+
+        with col2:
+            st.image(str(image_path), use_container_width=True)
+
+        st.caption(caption)
+    else:
+        st.warning(f"Missing image: {image_name}")
+
 
 def render_cctv_section() -> None:
     cam1_persons = load_json_file(output_path("persons_cam1.json"))
@@ -191,7 +206,16 @@ def render_cctv_section() -> None:
     if cam1_people == 0 and cam1_zone_dwell_total > 0:
         st.warning("Inconsistent analytics detected. Check source files.")
 
-    render_zone_distribution("CAM1 Zone Distribution", cam1_zone_summary)
+    render_zone_preview(
+        "cam1_zones_preview.png",
+        "CAM1 Zone Layout",
+        "CAM1 business zones used for dwell analytics",
+    )
+
+    render_zone_distribution(
+        "CAM1 Zone Distribution",
+        cam1_zone_summary,
+    )
 
     st.divider()
 
@@ -212,7 +236,16 @@ def render_cctv_section() -> None:
     if cam2_people == 0 and cam2_zone_dwell_total > 0:
         st.warning("Inconsistent analytics detected. Check source files.")
 
-    render_zone_distribution("CAM2 Zone Distribution", cam2_zone_summary)
+    render_zone_preview(
+        "cam2_zones_preview.png",
+        "CAM2 Zone Layout",
+        "CAM2 business zones used for dwell analytics",
+    )
+
+    render_zone_distribution(
+        "CAM2 Zone Distribution",
+        cam2_zone_summary,
+    )
 
     with st.expander("Debug Logs"):
         st.write("Loaded: persons_cam1.json", f"records={cam1_records}")
