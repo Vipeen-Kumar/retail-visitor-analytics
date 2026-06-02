@@ -1,163 +1,194 @@
-# CCTV Person Tracker
+# Retail Store Analytics Platform
 
-Simple Python project for processing CCTV footage with:
+## Overview
 
-- YOLOv8 for person detection
-- ByteTrack for stable track IDs
-- OpenCV for video I/O and drawing
+This project combines:
 
-## What it does
+1. CCTV-based customer analytics
+2. Sales analytics
 
-- Detects only people
-- Assigns track IDs
-- Draws bounding boxes
-- Draws track IDs
-- Saves an annotated output video
-- Builds person-presence analytics from tracking data
+to provide store performance insights.
 
-## Input / Output
+It is designed as a demo-ready analytics platform for retail environments, hackathons, portfolio projects, and business presentations.
 
-- Inputs:
-  `./CCTV Footage/CAM 1.mp4`
-  `./CCTV Footage/CAM 2.mp4`
-- Output video: `./outputs/annotated_cam1.mp4`
-- Output video: `./outputs/annotated_cam2.mp4`
-- Person analytics: `./outputs/persons_cam1.json`
-- Person analytics: `./outputs/persons_cam2.json`
-- Summary: `./outputs/summary_cam1.json`
-- Summary: `./outputs/summary_cam2.json`
-- Raw summary: `./outputs/summary_raw_cam1.json`
-- Raw summary: `./outputs/summary_raw_cam2.json`
-- Filtered summary: `./outputs/summary_filtered_cam1.json`
-- Filtered summary: `./outputs/summary_filtered_cam2.json`
-- Person ranking: `./outputs/person_ranking_cam1.json`
-- Person ranking: `./outputs/person_ranking_cam2.json`
-- Strict summary: `./outputs/summary_strict_cam1.json`
-- Strict summary: `./outputs/summary_strict_cam2.json`
-- Zone analytics: `./outputs/zone_analytics_cam1.json`
-- Zone analytics: `./outputs/zone_analytics_cam2.json`
-- Zone summary: `./outputs/zone_summary_cam1.json`
-- Zone summary: `./outputs/zone_summary_cam2.json`
-- Top zones: `./outputs/top_zones_cam1.json`
-- Top zones: `./outputs/top_zones_cam2.json`
-- Combined summary: `./outputs/combined_summary.json`
+## Features
 
-## Install
+### Customer Analytics
+
+- YOLOv8 person detection
+- ByteTrack tracking
+- Multi-camera support
+- Zone analytics
+- Dwell time analytics
+- Customer movement insights
+
+### Sales Analytics
+
+- Sales summaries
+- Brand performance
+- Category performance
+- Salesperson rankings
+
+### Dashboard
+
+- CCTV analytics dashboard
+- Sales analytics dashboard
+- Combined business overview
+
+## Project Structure
+
+```text
+yolo/
+├── CCTV Footage/
+│   ├── CAM 1.mp4
+│   └── CAM 2.mp4
+├── csv/
+│   ├── Brigade_Bangalore_10_April_26 (1)bc6219c.csv
+│   └── Brigade Road - Store layoutc5f5d56.xlsx
+├── dashboard/
+│   └── app.py
+├── outputs/
+│   ├── annotated_cam1.mp4
+│   ├── annotated_cam2.mp4
+│   ├── combined_summary.json
+│   ├── persons_cam1.json
+│   ├── persons_cam2.json
+│   ├── zone_summary_cam1.json
+│   ├── zone_summary_cam2.json
+│   ├── sales_summary.json
+│   ├── brand_summary.json
+│   ├── category_summary.json
+│   └── salesperson_summary.json
+├── src/
+│   └── cctv_tracker/
+│       ├── __init__.py
+│       ├── cli.py
+│       └── sales_analytics.py
+├── pyproject.toml
+└── README.md
+```
+
+## Installation
+
+1. Create a virtual environment:
 
 ```bash
 python -m venv .venv
+```
+
+2. Activate it:
+
+```bash
 .venv\Scripts\activate
+```
+
+3. Install the project and dashboard dependencies:
+
+```bash
 pip install -e .
 ```
 
-## Run
+## Running CCTV Analytics
+
+Run the default single-camera pipeline:
 
 ```bash
 track-cctv
 ```
 
-Or:
+Process a specific camera:
 
 ```bash
-python -m cctv_tracker.cli
+track-cctv --camera CAM1
+track-cctv --camera CAM2
 ```
 
 Process both cameras:
 
 ```bash
-track-cctv --all-cameras
-```
-
-Select a single camera explicitly:
-
-```bash
-track-cctv --camera CAM1
-track-cctv --camera CAM2
 track-cctv --camera ALL
 ```
 
-## Optional arguments
-
-```bash
-python -m cctv_tracker.cli ^
-  --input ".\CCTV Footage\CAM 1.mp4" ^
-  --output ".\outputs\annotated_cam1.mp4" ^
-  --model "yolov8n.pt" ^
-  --conf 0.35 ^
-  --imgsz 640 ^
-  --skip-frames 2 ^
-  --save-video
-```
-
-Multi-camera with videos:
-
-```bash
-track-cctv --all-cameras --save-video
-```
-
-Equivalent explicit selector:
+Process both cameras and save annotated videos:
 
 ```bash
 track-cctv --camera ALL --save-video
 ```
 
-## Video Generation
-
-Annotated video generation is disabled by default for faster analytics iteration.
-
-Use:
+You can also run the module directly:
 
 ```bash
-track-cctv --save-video
+python -m cctv_tracker.cli --camera ALL --save-video
 ```
 
-to generate annotated videos.
+## Running Sales Analytics
 
-If enabled, the video overlay also draws:
+```bash
+python -m cctv_tracker.sales_analytics
+```
 
-- Zone polygons
-- The current zone name near each tracked person
+## Running Dashboard
 
-## Notes
+```bash
+streamlit run dashboard/app.py
+```
 
-- The default YOLO class filter is `person` only.
-- ByteTrack is enabled through Ultralytics tracking with `tracker="bytetrack.yaml"`.
-- The default image size is `640` for faster processing.
-- `--skip-frames N` uses video stride to process every Nth frame while keeping the saved output playable.
-- Current filtering keeps only people with `visible_duration_seconds >= 15` and `frame_count >= 300`.
-- Strict filtering reports an additional stricter estimate using `visible_duration_seconds >= 30` and `frame_count >= 600`.
-- Zone analytics uses manual polygon zones for `CAM 1` and assigns each person by bounding-box center point.
-- Zone analytics uses manual polygon zones for `CAM 1` and `CAM 2` and assigns each person by bounding-box center point.
-- Zone dwell times are measured from explicit zone entry and exit timing, including zone switches, track disappearance, and end-of-video flushes.
-- Track IDs remain isolated per camera, and person records include `camera_id`.
-- Combined analytics include per-camera people counts, per-camera dwell totals, and aggregated `zone_totals`.
-- Progress is logged every 100 processed frames, followed by total frames, total time, and average FPS.
-- Each tracked person records first seen time, last seen time, visible duration, and a simple `staff_candidate` flag.
-- Staff candidates are inferred using long visible duration plus broad coverage across the video timeline.
-- Output filenames are derived from the input camera name, such as `cam1`, `cam2`, and so on.
-- On first run, model weights such as `yolov8n.pt` may be downloaded automatically if they are not already available.
+## Outputs
 
-## Modified Files
+### CCTV Outputs
 
-File:
-`src/cctv_tracker/cli.py`
+- `persons_cam1.json`
+- `persons_cam2.json`
+- `summary_cam1.json`
+- `summary_cam2.json`
+- `summary_raw_cam1.json`
+- `summary_raw_cam2.json`
+- `summary_filtered_cam1.json`
+- `summary_filtered_cam2.json`
+- `summary_strict_cam1.json`
+- `summary_strict_cam2.json`
+- `person_ranking_cam1.json`
+- `person_ranking_cam2.json`
+- `zone_analytics_cam1.json`
+- `zone_analytics_cam2.json`
+- `zone_summary_cam1.json`
+- `zone_summary_cam2.json`
+- `top_zones_cam1.json`
+- `top_zones_cam2.json`
+- `combined_summary.json`
+- `annotated_cam1.mp4`
+- `annotated_cam2.mp4`
 
-Exact file path:
-`C:/Users/vipee/Desktop/study/yolo/src/cctv_tracker/cli.py`
+### Sales Outputs
 
-Functions:
-`build_parser()`
-`build_input_paths()`
-`get_camera_id()`
-`build_summary_paths()`
-`build_zone_paths()`
-`build_combined_summary()`
-`build_person_record()`
-`annotate_frame()`
-`update_zone_presence()`
-`process_video()`
-`create_writer()`
-`main()`
+- `sales_summary.json`
+- `brand_summary.json`
+- `category_summary.json`
+- `salesperson_summary.json`
 
-Lines:
-approximately `15-110`, `180-260`, `300-470`, and `520-650`
+### Preview / Debug Outputs
+
+- `cam1_first_frame.jpg`
+- `cam2_first_frame.jpg`
+- `cam1_zones_preview.png`
+- `cam2_zones_preview.png`
+
+## Dashboard Overview
+
+The Streamlit dashboard includes three major views:
+
+- `CCTV Analytics`
+  Shows per-camera people counts, dwell time, zone distribution, and top engagement zones.
+- `Sales Analytics`
+  Shows order, quantity, GMV, NMV, average bill, and top performers across brands, categories, and salespeople.
+- `Combined Overview`
+  Merges CCTV and sales metrics into a high-level business summary.
+
+The dashboard is built to handle missing JSON files gracefully and will show warnings instead of crashing when data is unavailable.
+
+## Future Improvements
+
+- Heatmaps
+- Product analytics
+- Hourly sales analytics
+- Real-time CCTV monitoring
