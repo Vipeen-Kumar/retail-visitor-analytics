@@ -170,7 +170,6 @@ def render_zone_preview(image_name: str, title: str, caption: str) -> None:
     else:
         st.warning(f"Missing image: {image_name}")
 
-
 def render_cctv_section() -> None:
     cam1_persons = load_json_file(output_path("persons_cam1.json"))
     cam2_persons = load_json_file(output_path("persons_cam2.json"))
@@ -212,6 +211,10 @@ def render_cctv_section() -> None:
         "CAM1 business zones used for dwell analytics",
     )
 
+    st.markdown(
+        "[🎥 View CAM1 Annotated Video](https://drive.google.com/file/d/1v3pf04I5NoWY6np5nFQwuSvN0DU-MGM1/view?usp=sharing)"
+    )
+
     render_zone_distribution(
         "CAM1 Zone Distribution",
         cam1_zone_summary,
@@ -240,6 +243,10 @@ def render_cctv_section() -> None:
         "cam2_zones_preview.png",
         "CAM2 Zone Layout",
         "CAM2 business zones used for dwell analytics",
+    )
+
+    st.markdown(
+        "[🎥 View CAM2 Annotated Video](https://drive.google.com/file/d/1PXDrcz5Wm2G7K54TMKW7gNCl9k6S39vc/view?usp=sharing)"
     )
 
     render_zone_distribution(
