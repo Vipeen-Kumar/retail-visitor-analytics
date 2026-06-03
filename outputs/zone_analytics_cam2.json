@@ -1,0 +1,954 @@
+[
+  {
+    "camera_id": "CAM2",
+    "person_id": 1,
+    "zones": {
+      "mirror_area": 125.66
+    },
+    "zone_visits": {
+      "mirror_area": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 2,
+    "zones": {
+      "skincare_wall": 0.9
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 3,
+    "zones": {
+      "skincare_wall": 1.07
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 4,
+    "zones": {
+      "front_display": 22.49,
+      "makeup_unit": 10.18
+    },
+    "zone_visits": {
+      "front_display": 14,
+      "makeup_unit": 3
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 5,
+    "zones": {
+      "makeup_unit": 1.43,
+      "skincare_wall": 16.12
+    },
+    "zone_visits": {
+      "makeup_unit": 4,
+      "skincare_wall": 18
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 6,
+    "zones": {
+      "skincare_wall": 0.07
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 7,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 8,
+    "zones": {
+      "skincare_wall": 0.1,
+      "mirror_area": 0.97
+    },
+    "zone_visits": {
+      "mirror_area": 4,
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 9,
+    "zones": {
+      "skincare_wall": 1.17
+    },
+    "zone_visits": {
+      "skincare_wall": 3
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 10,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 13,
+    "zones": {
+      "skincare_wall": 2.4
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 14,
+    "zones": {
+      "mirror_area": 0.43
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 16,
+    "zones": {
+      "skincare_wall": 25.56
+    },
+    "zone_visits": {
+      "skincare_wall": 13
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 17,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 20,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 21,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 22,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 23,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 24,
+    "zones": {
+      "skincare_wall": 0.43
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 26,
+    "zones": {
+      "skincare_wall": 0.03
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 29,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 30,
+    "zones": {
+      "skincare_wall": 0.57
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 31,
+    "zones": {
+      "skincare_wall": 0.73
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 32,
+    "zones": {
+      "skincare_wall": 0.23
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 33,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 34,
+    "zones": {
+      "skincare_wall": 2.07
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 35,
+    "zones": {
+      "skincare_wall": 0.03
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 36,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 37,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 38,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 39,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 40,
+    "zones": {
+      "skincare_wall": 0.3
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 44,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 48,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 49,
+    "zones": {
+      "skincare_wall": 13.98
+    },
+    "zone_visits": {
+      "skincare_wall": 18
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 51,
+    "zones": {
+      "front_display": 0.03
+    },
+    "zone_visits": {
+      "front_display": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 52,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 53,
+    "zones": {
+      "front_display": 3.5
+    },
+    "zone_visits": {
+      "front_display": 7
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 54,
+    "zones": {
+      "skincare_wall": 14.75
+    },
+    "zone_visits": {
+      "skincare_wall": 10
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 55,
+    "zones": {
+      "skincare_wall": 0.67
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 56,
+    "zones": {
+      "skincare_wall": 0.3
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 60,
+    "zones": {
+      "skincare_wall": 4.54
+    },
+    "zone_visits": {
+      "skincare_wall": 29
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 61,
+    "zones": {
+      "front_display": 0.47
+    },
+    "zone_visits": {
+      "front_display": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 62,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 63,
+    "zones": {
+      "mirror_area": 0.33
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 64,
+    "zones": {
+      "mirror_area": 0.33
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 65,
+    "zones": {
+      "mirror_area": 0.17,
+      "skincare_wall": 18.42
+    },
+    "zone_visits": {
+      "mirror_area": 2,
+      "skincare_wall": 7
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 68,
+    "zones": {
+      "mirror_area": 0.27
+    },
+    "zone_visits": {
+      "mirror_area": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 71,
+    "zones": {
+      "makeup_unit": 17.82,
+      "front_display": 8.27
+    },
+    "zone_visits": {
+      "front_display": 11,
+      "makeup_unit": 6
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 73,
+    "zones": {
+      "skincare_wall": 4.7,
+      "makeup_unit": 0.13
+    },
+    "zone_visits": {
+      "makeup_unit": 2,
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 80,
+    "zones": {
+      "skincare_wall": 0.43
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 81,
+    "zones": {
+      "skincare_wall": 0.07
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 82,
+    "zones": {
+      "skincare_wall": 0.17
+    },
+    "zone_visits": {
+      "skincare_wall": 3
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 84,
+    "zones": {
+      "skincare_wall": 0.1
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 85,
+    "zones": {
+      "skincare_wall": 10.81
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 87,
+    "zones": {
+      "skincare_wall": 0.07
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 88,
+    "zones": {
+      "skincare_wall": 0.03
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 90,
+    "zones": {
+      "skincare_wall": 10.41
+    },
+    "zone_visits": {
+      "skincare_wall": 5
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 91,
+    "zones": {
+      "skincare_wall": 0.17
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 92,
+    "zones": {
+      "mirror_area": 0.1
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 93,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 96,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 100,
+    "zones": {
+      "mirror_area": 0.17
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 101,
+    "zones": {
+      "mirror_area": 0.03
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 103,
+    "zones": {
+      "skincare_wall": 0.27,
+      "makeup_unit": 0.07
+    },
+    "zone_visits": {
+      "makeup_unit": 1,
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 104,
+    "zones": {
+      "skincare_wall": 4.14
+    },
+    "zone_visits": {
+      "skincare_wall": 6
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 105,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 109,
+    "zones": {
+      "mirror_area": 0.03
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 110,
+    "zones": {
+      "skincare_wall": 5.27
+    },
+    "zone_visits": {
+      "skincare_wall": 7
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 111,
+    "zones": {
+      "mirror_area": 0.43
+    },
+    "zone_visits": {
+      "mirror_area": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 114,
+    "zones": {
+      "skincare_wall": 0.17
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 115,
+    "zones": {
+      "makeup_unit": 0.6
+    },
+    "zone_visits": {
+      "makeup_unit": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 117,
+    "zones": {
+      "makeup_unit": 0.73,
+      "skincare_wall": 2.7
+    },
+    "zone_visits": {
+      "makeup_unit": 5,
+      "skincare_wall": 9
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 118,
+    "zones": {
+      "skincare_wall": 3.0
+    },
+    "zone_visits": {
+      "skincare_wall": 7
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 119,
+    "zones": {
+      "skincare_wall": 2.34
+    },
+    "zone_visits": {
+      "skincare_wall": 3
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 121,
+    "zones": {
+      "mirror_area": 0.63
+    },
+    "zone_visits": {
+      "mirror_area": 7
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 123,
+    "zones": {
+      "front_display": 2.54
+    },
+    "zone_visits": {
+      "front_display": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 124,
+    "zones": {
+      "skincare_wall": 17.22
+    },
+    "zone_visits": {
+      "skincare_wall": 20
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 125,
+    "zones": {
+      "mirror_area": 2.44
+    },
+    "zone_visits": {
+      "mirror_area": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 126,
+    "zones": {
+      "skincare_wall": 9.74
+    },
+    "zone_visits": {
+      "skincare_wall": 11
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 127,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 128,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 130,
+    "zones": {
+      "skincare_wall": 0.73
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 131,
+    "zones": {
+      "mirror_area": 0.07
+    },
+    "zone_visits": {
+      "mirror_area": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 132,
+    "zones": {
+      "front_display": 7.37
+    },
+    "zone_visits": {
+      "front_display": 18
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 133,
+    "zones": {
+      "skincare_wall": 0.43
+    },
+    "zone_visits": {
+      "skincare_wall": 9
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 136,
+    "zones": {
+      "makeup_unit": 0.23,
+      "skincare_wall": 6.81
+    },
+    "zone_visits": {
+      "makeup_unit": 1,
+      "skincare_wall": 11
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 138,
+    "zones": {
+      "skincare_wall": 0.03
+    },
+    "zone_visits": {
+      "skincare_wall": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 139,
+    "zones": {
+      "skincare_wall": 1.87
+    },
+    "zone_visits": {
+      "skincare_wall": 3
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 144,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 146,
+    "zones": {
+      "skincare_wall": 1.37
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 147,
+    "zones": {
+      "makeup_unit": 0.07
+    },
+    "zone_visits": {
+      "makeup_unit": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 150,
+    "zones": {
+      "skincare_wall": 0.23
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 151,
+    "zones": {
+      "skincare_wall": 0.73
+    },
+    "zone_visits": {
+      "skincare_wall": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 152,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 159,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 160,
+    "zones": {
+      "skincare_wall": 1.67
+    },
+    "zone_visits": {
+      "skincare_wall": 4
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 162,
+    "zones": {
+      "front_display": 0.23
+    },
+    "zone_visits": {
+      "front_display": 2
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 164,
+    "zones": {
+      "skincare_wall": 2.34
+    },
+    "zone_visits": {
+      "skincare_wall": 3
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 165,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 167,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 168,
+    "zones": {
+      "makeup_unit": 3.44
+    },
+    "zone_visits": {
+      "makeup_unit": 1
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 169,
+    "zones": {
+      "skincare_wall": 4.97
+    },
+    "zone_visits": {
+      "skincare_wall": 6
+    }
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 170,
+    "zones": {},
+    "zone_visits": {}
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 171,
+    "zones": {},
+    "zone_visits": {}
+  }
+]

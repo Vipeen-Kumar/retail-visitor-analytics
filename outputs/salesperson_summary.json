@@ -1,0 +1,38 @@
+[
+  {
+    "salesperson_name": "Zufishan Khazra",
+    "total_qty": 53.0,
+    "total_nmv": 16583.38,
+    "ranking": 1
+  },
+  {
+    "salesperson_name": "kasthuri v",
+    "total_qty": 20.0,
+    "total_nmv": 6541.95,
+    "ranking": 2
+  },
+  {
+    "salesperson_name": "Shashikala .",
+    "total_qty": 12.0,
+    "total_nmv": 4631.7,
+    "ranking": 3
+  },
+  {
+    "salesperson_name": "Priya v",
+    "total_qty": 16.0,
+    "total_nmv": 3665.75,
+    "ranking": 4
+  },
+  {
+    "salesperson_name": "Naziya Begum",
+    "total_qty": 9.0,
+    "total_nmv": 3408.96,
+    "ranking": 5
+  },
+  {
+    "salesperson_name": "Unknown",
+    "total_qty": 7.0,
+    "total_nmv": 0.0,
+    "ranking": 6
+  }
+]

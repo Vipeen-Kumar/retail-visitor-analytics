@@ -1,0 +1,632 @@
+[
+  {
+    "camera_id": "CAM2",
+    "person_id": 1,
+    "visible_duration_seconds": 125.66,
+    "frame_count": 3766
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 4,
+    "visible_duration_seconds": 46.81,
+    "frame_count": 1403
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 71,
+    "visible_duration_seconds": 33.27,
+    "frame_count": 997
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 5,
+    "visible_duration_seconds": 30.83,
+    "frame_count": 924
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 16,
+    "visible_duration_seconds": 27.79,
+    "frame_count": 833
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 65,
+    "visible_duration_seconds": 25.46,
+    "frame_count": 763
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 132,
+    "visible_duration_seconds": 19.69,
+    "frame_count": 590
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 124,
+    "visible_duration_seconds": 18.25,
+    "frame_count": 547
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 54,
+    "visible_duration_seconds": 15.68,
+    "frame_count": 470
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 85,
+    "visible_duration_seconds": 15.55,
+    "frame_count": 466
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 136,
+    "visible_duration_seconds": 14.88,
+    "frame_count": 446
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 49,
+    "visible_duration_seconds": 13.98,
+    "frame_count": 419
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 90,
+    "visible_duration_seconds": 12.15,
+    "frame_count": 364
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 103,
+    "visible_duration_seconds": 11.48,
+    "frame_count": 344
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 159,
+    "visible_duration_seconds": 10.81,
+    "frame_count": 324
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 126,
+    "visible_duration_seconds": 10.31,
+    "frame_count": 309
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 147,
+    "visible_duration_seconds": 8.88,
+    "frame_count": 266
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 73,
+    "visible_duration_seconds": 8.68,
+    "frame_count": 260
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 117,
+    "visible_duration_seconds": 7.87,
+    "frame_count": 236
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 139,
+    "visible_duration_seconds": 7.14,
+    "frame_count": 214
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 127,
+    "visible_duration_seconds": 6.71,
+    "frame_count": 201
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 80,
+    "visible_duration_seconds": 6.47,
+    "frame_count": 194
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 123,
+    "visible_duration_seconds": 6.04,
+    "frame_count": 181
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 60,
+    "visible_duration_seconds": 5.71,
+    "frame_count": 171
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 110,
+    "visible_duration_seconds": 5.57,
+    "frame_count": 167
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 96,
+    "visible_duration_seconds": 5.37,
+    "frame_count": 161
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 168,
+    "visible_duration_seconds": 5.34,
+    "frame_count": 160
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 169,
+    "visible_duration_seconds": 4.97,
+    "frame_count": 149
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 104,
+    "visible_duration_seconds": 4.14,
+    "frame_count": 124
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 164,
+    "visible_duration_seconds": 4.14,
+    "frame_count": 124
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 53,
+    "visible_duration_seconds": 3.54,
+    "frame_count": 106
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 118,
+    "visible_duration_seconds": 3.0,
+    "frame_count": 90
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 13,
+    "visible_duration_seconds": 2.94,
+    "frame_count": 88
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 146,
+    "visible_duration_seconds": 2.74,
+    "frame_count": 82
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 23,
+    "visible_duration_seconds": 2.5,
+    "frame_count": 75
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 125,
+    "visible_duration_seconds": 2.47,
+    "frame_count": 74
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 2,
+    "visible_duration_seconds": 2.37,
+    "frame_count": 71
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 119,
+    "visible_duration_seconds": 2.34,
+    "frame_count": 70
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 8,
+    "visible_duration_seconds": 2.14,
+    "frame_count": 64
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 114,
+    "visible_duration_seconds": 2.14,
+    "frame_count": 64
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 34,
+    "visible_duration_seconds": 2.07,
+    "frame_count": 62
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 20,
+    "visible_duration_seconds": 1.94,
+    "frame_count": 58
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 165,
+    "visible_duration_seconds": 1.94,
+    "frame_count": 58
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 160,
+    "visible_duration_seconds": 1.67,
+    "frame_count": 50
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 10,
+    "visible_duration_seconds": 1.43,
+    "frame_count": 43
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 38,
+    "visible_duration_seconds": 1.37,
+    "frame_count": 41
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 61,
+    "visible_duration_seconds": 1.37,
+    "frame_count": 41
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 17,
+    "visible_duration_seconds": 1.27,
+    "frame_count": 38
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 9,
+    "visible_duration_seconds": 1.17,
+    "frame_count": 35
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 62,
+    "visible_duration_seconds": 1.17,
+    "frame_count": 35
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 36,
+    "visible_duration_seconds": 1.13,
+    "frame_count": 34
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 152,
+    "visible_duration_seconds": 1.13,
+    "frame_count": 34
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 3,
+    "visible_duration_seconds": 1.07,
+    "frame_count": 32
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 167,
+    "visible_duration_seconds": 0.97,
+    "frame_count": 29
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 30,
+    "visible_duration_seconds": 0.93,
+    "frame_count": 28
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 48,
+    "visible_duration_seconds": 0.93,
+    "frame_count": 28
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 31,
+    "visible_duration_seconds": 0.8,
+    "frame_count": 24
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 56,
+    "visible_duration_seconds": 0.8,
+    "frame_count": 24
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 130,
+    "visible_duration_seconds": 0.73,
+    "frame_count": 22
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 151,
+    "visible_duration_seconds": 0.73,
+    "frame_count": 22
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 55,
+    "visible_duration_seconds": 0.67,
+    "frame_count": 20
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 115,
+    "visible_duration_seconds": 0.63,
+    "frame_count": 19
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 121,
+    "visible_duration_seconds": 0.63,
+    "frame_count": 19
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 170,
+    "visible_duration_seconds": 0.6,
+    "frame_count": 18
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 24,
+    "visible_duration_seconds": 0.57,
+    "frame_count": 17
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 111,
+    "visible_duration_seconds": 0.57,
+    "frame_count": 17
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 171,
+    "visible_duration_seconds": 0.57,
+    "frame_count": 17
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 52,
+    "visible_duration_seconds": 0.5,
+    "frame_count": 15
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 14,
+    "visible_duration_seconds": 0.43,
+    "frame_count": 13
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 133,
+    "visible_duration_seconds": 0.43,
+    "frame_count": 13
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 101,
+    "visible_duration_seconds": 0.4,
+    "frame_count": 12
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 51,
+    "visible_duration_seconds": 0.33,
+    "frame_count": 10
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 63,
+    "visible_duration_seconds": 0.33,
+    "frame_count": 10
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 64,
+    "visible_duration_seconds": 0.33,
+    "frame_count": 10
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 22,
+    "visible_duration_seconds": 0.3,
+    "frame_count": 9
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 26,
+    "visible_duration_seconds": 0.3,
+    "frame_count": 9
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 40,
+    "visible_duration_seconds": 0.3,
+    "frame_count": 9
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 39,
+    "visible_duration_seconds": 0.27,
+    "frame_count": 8
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 68,
+    "visible_duration_seconds": 0.27,
+    "frame_count": 8
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 32,
+    "visible_duration_seconds": 0.23,
+    "frame_count": 7
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 150,
+    "visible_duration_seconds": 0.23,
+    "frame_count": 7
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 162,
+    "visible_duration_seconds": 0.23,
+    "frame_count": 7
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 29,
+    "visible_duration_seconds": 0.2,
+    "frame_count": 6
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 144,
+    "visible_duration_seconds": 0.2,
+    "frame_count": 6
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 82,
+    "visible_duration_seconds": 0.17,
+    "frame_count": 5
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 91,
+    "visible_duration_seconds": 0.17,
+    "frame_count": 5
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 100,
+    "visible_duration_seconds": 0.17,
+    "frame_count": 5
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 105,
+    "visible_duration_seconds": 0.17,
+    "frame_count": 5
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 81,
+    "visible_duration_seconds": 0.13,
+    "frame_count": 4
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 37,
+    "visible_duration_seconds": 0.1,
+    "frame_count": 3
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 84,
+    "visible_duration_seconds": 0.1,
+    "frame_count": 3
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 92,
+    "visible_duration_seconds": 0.1,
+    "frame_count": 3
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 128,
+    "visible_duration_seconds": 0.1,
+    "frame_count": 3
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 6,
+    "visible_duration_seconds": 0.07,
+    "frame_count": 2
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 7,
+    "visible_duration_seconds": 0.07,
+    "frame_count": 2
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 44,
+    "visible_duration_seconds": 0.07,
+    "frame_count": 2
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 87,
+    "visible_duration_seconds": 0.07,
+    "frame_count": 2
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 131,
+    "visible_duration_seconds": 0.07,
+    "frame_count": 2
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 21,
+    "visible_duration_seconds": 0.03,
+    "frame_count": 1
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 33,
+    "visible_duration_seconds": 0.03,
+    "frame_count": 1
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 35,
+    "visible_duration_seconds": 0.03,
+    "frame_count": 1
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 88,
+    "visible_duration_seconds": 0.03,
+    "frame_count": 1
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 93,
+    "visible_duration_seconds": 0.03,
+    "frame_count": 1
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 109,
+    "visible_duration_seconds": 0.03,
+    "frame_count": 1
+  },
+  {
+    "camera_id": "CAM2",
+    "person_id": 138,
+    "visible_duration_seconds": 0.03,
+    "frame_count": 1
+  }
+]

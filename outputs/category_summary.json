@@ -1,0 +1,38 @@
+[
+  {
+    "dep_name": "makeup",
+    "total_qty": 55.0,
+    "total_nmv": 21939.09,
+    "ranking": 1
+  },
+  {
+    "dep_name": "skin",
+    "total_qty": 42.0,
+    "total_nmv": 9408.28,
+    "ranking": 2
+  },
+  {
+    "dep_name": "hair",
+    "total_qty": 6.0,
+    "total_nmv": 1957.15,
+    "ranking": 3
+  },
+  {
+    "dep_name": "personal-care",
+    "total_qty": 4.0,
+    "total_nmv": 763.8,
+    "ranking": 4
+  },
+  {
+    "dep_name": "bath-and-body",
+    "total_qty": 9.0,
+    "total_nmv": 514.42,
+    "ranking": 5
+  },
+  {
+    "dep_name": "fragrance",
+    "total_qty": 1.0,
+    "total_nmv": 249.0,
+    "ranking": 6
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "skincare_wall": {
+    "total_visits": 3,
+    "total_dwell_seconds": 43.61
+  },
+  "makeup_unit": {
+    "total_visits": 15,
+    "total_dwell_seconds": 95.13
+  },
+  "mirror_area": {
+    "total_visits": 54,
+    "total_dwell_seconds": 60.83
+  },
+  "front_display": {
+    "total_visits": 0,
+    "total_dwell_seconds": 0.0
+  }
+}

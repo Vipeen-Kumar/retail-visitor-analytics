@@ -11,7 +11,7 @@
 *.pt
 
 # Outputs
-outputs/
+outputs/*.mp4
 
 # CCTV footage
 CCTV Footage/

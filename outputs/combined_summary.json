@@ -1,0 +1,44 @@
+{
+  "camera_count": 1,
+  "total_people": 7,
+  "total_staff_candidates": 1,
+  "total_customer_candidates": 6,
+  "total_dwell_seconds": 199.57,
+  "cam1_people": 7,
+  "cam2_people": 0,
+  "combined_people": 7,
+  "cam1_dwell_seconds": 199.57,
+  "cam2_dwell_seconds": 0.0,
+  "camera_breakdown": {
+    "CAM1": {
+      "people": 7,
+      "staff_candidates": 1,
+      "customer_candidates": 6,
+      "total_dwell_seconds": 199.57
+    }
+  },
+  "zones": {
+    "skincare_wall": {
+      "total_visits": 3,
+      "total_dwell_seconds": 43.61
+    },
+    "makeup_unit": {
+      "total_visits": 15,
+      "total_dwell_seconds": 95.13
+    },
+    "mirror_area": {
+      "total_visits": 54,
+      "total_dwell_seconds": 60.83
+    },
+    "front_display": {
+      "total_visits": 0,
+      "total_dwell_seconds": 0.0
+    }
+  },
+  "zone_totals": {
+    "skincare_wall": 43.61,
+    "makeup_unit": 95.13,
+    "mirror_area": 60.83,
+    "front_display": 0.0
+  }
+}
