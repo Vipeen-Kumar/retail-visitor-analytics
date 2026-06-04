@@ -2,14 +2,11 @@
 
 ## Overview
 
-This project combines:
+Retail Store Analytics Platform combines computer vision and sales analytics to help retailers understand customer behavior and business performance.
 
-1. CCTV-based customer analytics
-2. Sales analytics
+The system analyzes CCTV footage using YOLOv8 and ByteTrack to measure visitor movement, dwell time, and engagement across different store zones. It also processes transaction data to generate insights about sales performance, product categories, brands, and salesperson effectiveness.
 
-to provide store performance insights.
-
-It is designed as a demo-ready analytics platform for retail environments, hackathons, portfolio projects, and business presentations.
+All analytics are presented through an interactive Streamlit dashboard.
 
 ## Features
 
@@ -35,37 +32,99 @@ It is designed as a demo-ready analytics platform for retail environments, hacka
 - Sales analytics dashboard
 - Combined business overview
 
+## Business Value
+
+The platform helps retailers:
+
+- Understand customer movement patterns
+- Identify high-engagement store zones
+- Measure customer dwell time
+- Optimize store layouts
+- Evaluate promotional areas
+- Analyze brand performance
+- Compare category performance
+- Track salesperson effectiveness
+
+## Business Value
+
+The platform helps retailers:
+
+- Understand customer movement patterns
+- Identify high-engagement store zones
+- Measure customer dwell time
+- Optimize store layouts
+- Evaluate promotional areas
+- Analyze brand performance
+- Compare category performance
+- Track salesperson effectiveness
+
 ## Project Structure
 
 ```text
 yolo/
 ├── CCTV Footage/
 │   ├── CAM 1.mp4
-│   └── CAM 2.mp4
+│   ├── CAM 2.mp4
+│   ├── CAM 3.mp4
+│   ├── CAM 4.mp4
+│   └── CAM 5.mp4
+│
 ├── csv/
 │   ├── Brigade_Bangalore_10_April_26 (1)bc6219c.csv
 │   └── Brigade Road - Store layoutc5f5d56.xlsx
+│
 ├── dashboard/
 │   └── app.py
+│
 ├── outputs/
 │   ├── annotated_cam1.mp4
 │   ├── annotated_cam2.mp4
-│   ├── combined_summary.json
+│   ├── cam1_first_frame.jpg
+│   ├── cam2_first_frame.jpg
+│   ├── cam1_zones_preview.png
+│   ├── cam2_zones_preview.png
 │   ├── persons_cam1.json
 │   ├── persons_cam2.json
+│   ├── person_ranking_cam1.json
+│   ├── person_ranking_cam2.json
+│   ├── summary_cam1.json
+│   ├── summary_cam2.json
+│   ├── summary_raw_cam1.json
+│   ├── summary_raw_cam2.json
+│   ├── summary_filtered_cam1.json
+│   ├── summary_filtered_cam2.json
+│   ├── summary_strict_cam1.json
+│   ├── summary_strict_cam2.json
+│   ├── zone_analytics_cam1.json
+│   ├── zone_analytics_cam2.json
 │   ├── zone_summary_cam1.json
 │   ├── zone_summary_cam2.json
+│   ├── top_zones_cam1.json
+│   ├── top_zones_cam2.json
+│   ├── combined_summary.json
 │   ├── sales_summary.json
 │   ├── brand_summary.json
 │   ├── category_summary.json
-│   └── salesperson_summary.json
+│   ├── salesperson_summary.json
+│   └── events.jsonl
+│
 ├── src/
 │   └── cctv_tracker/
 │       ├── __init__.py
 │       ├── cli.py
-│       └── sales_analytics.py
-├── pyproject.toml
-└── README.md
+│       ├── sales_analytics.py
+│       ├── sales_analytics.ipynb
+│       └── generate_events.py
+│
+├── dashboard/
+│   └── app.py
+│
+├── CHOICES.md
+├── DESIGN.md
+├── README.md
+├── requirements.txt
+├── pyproject.local.toml
+└── yolov8n.pt
 ```
 
 ## Installation
@@ -186,9 +245,33 @@ The Streamlit dashboard includes three major views:
 
 The dashboard is built to handle missing JSON files gracefully and will show warnings instead of crashing when data is unavailable.
 
+## Key Outputs
+
+### CCTV Analytics
+
+- Unique visitor counts
+- Zone-wise dwell time
+- Zone visit frequency
+- Customer rankings
+- Staff candidate identification
+
+### Sales Analytics
+
+- Total Orders
+- Total Quantity Sold
+- Gross Merchandise Value (GMV)
+- Net Merchandise Value (NMV)
+- Average Bill Value
+- Brand Rankings
+- Category Rankings
+- Salesperson Rankings
+
 ## Future Improvements
 
-- Heatmaps
-- Product analytics
-- Hourly sales analytics
-- Real-time CCTV monitoring
+- Real-time CCTV stream processing
+- Store heatmap generation
+- Queue detection and alerts
+- Customer path visualization
+- Product conversion analytics
+- Multi-store analytics dashboard
+- Cloud deployment and centralized monitoring
